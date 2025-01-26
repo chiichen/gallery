@@ -5,6 +5,12 @@ on:
   schedule:
     - cron: '0 11 * * *'
 
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 env:
   GIT_USER: Chiichen # change to yourself
   GIT_EMAIL: chiichen@qq.com # change to yourself
@@ -45,7 +51,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         publish_dir: ./public
-        github_token: ${{ secrets.GH_PAGES_DEPLOY }}
-        user_name: ${{ env.GIT_USER }}
-        user_email: ${{ env.GIT_EMAIL }}
-        commit_msg: ${{ github.event.head_commit.message }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
