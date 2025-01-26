@@ -1,14 +1,14 @@
 title: 照片集
 subtitle: Take Photo Think Seriously
 description: 拿起相机，认真思考
-cover: 'https://github.com/lfkdsk/picx-images-hosting/raw/master/20230817/IMG_7586.4e91my1ve140.17iz0sa56gik.webp'
+cover: 'https://cdn.jsdelivr.net/gh/Chiichen/gallery@master/Misc/1737888778857.webp'
 author: Chiichen
 
 footer_logo:
   use: self
   self:
     link: 'https://Chiichen.github.io/'
-    src: 'https://github.com/lfkdsk/picx-images-hosting/raw/master/20230817/tripper2white.2pbuwaqvndu0.webp'
+    src: 'https://avatars.githubusercontent.com/u/39649411?v=4'
 
 url: https://Chiichen.github.io/gallery
 root: /gallery
