@@ -3,7 +3,7 @@ name: image classify
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 11 * * *'
+    - cron: "0 11 * * 1"
 
 # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
 permissions:
